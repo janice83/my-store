@@ -1,0 +1,44 @@
+.red {
+    color: #A52A2A;
+}
+
+.one-card a {
+    text-decoration: none;
+    color: #A52A2A;
+}
+
+.phone-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.one-card {
+    border: solid 1px darkgrey;
+    width: -webkit-fill-available;
+    margin: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+.icons>* {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .icons>* {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .phone-cards {
+        flex-wrap: wrap;
+    }
+}
